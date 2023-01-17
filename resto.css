@@ -1,0 +1,183 @@
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    'navbar'
+    'header'
+    'content'
+    'footer'
+    ;
+}
+
+
+/* Styling navbar */
+.navbar{
+    grid-area: navbar;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    font-family: "open sans";
+    color: #c70039;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    padding: 25px 30px 25px 100px;
+}
+
+li a:hover{
+    color: #fedd1f;
+}
+
+#logo{
+    color: #b30033;
+    font-family: "castellar";
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 5px 1px 10px  #c70039;
+    font-weight: bolder;
+    padding: 10px 30px 25px 100px;
+}
+
+/* header */
+.center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.headerbutton{
+    background-color: #c70039;
+    border: none;
+    color: white;
+    padding: 20px 37px;
+    text-align: center;
+    display: inline-block;
+    font-size: 21px;
+    margin: 4px 2px;
+}
+
+.headerbutton:hover{
+    background-color: #cc194c;
+}
+
+.header{
+    grid-area: header;
+    background-image: url("restoran1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+
+/* content */
+.content{
+    grid-area: content;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 100px;
+}
+
+
+/* card */
+.column{
+    float: left;
+    width: 25%;
+    padding: 10px 0px 10px 0px ;
+}
+
+.row{
+    margin: 0 -5px;
+}
+
+.card{
+    box-shadow: 5px 5px 7px 0;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px 0;
+    width: 90%;
+}
+
+
+.card:hover{
+    box-shadow: 8px 8px 9px 0;
+}
+
+
+.container{
+    padding: 10px 25px;
+}
+
+.container h4{
+    font-family: arial;
+    font-size: 25px;
+}
+
+.container p{
+    font-family: arial;
+    font-size: 22px;
+}
+
+/* Alamat */
+#customtable{
+    font-family: "Trebuchet MS", arial, helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+}
+
+#customtable td, #customtable th {
+    border: 1px solid #fbfbfb;
+    padding: 10px;
+    text-align: center;
+}
+
+#customtable tr:nth-child(even){background-color: #d9d9d9;}
+#customtable tr:hover {background-color: #fbfbfb; }
+
+#customtable th{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #c70039;
+    color: #ffffff;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #c70039;
+    text-align: center;
+    font-family: 'open-sans';
+    color: #ffffff;
+    padding: 25px 30px 25px 100px;
+}
+
+.footer a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .grid-container{
+        grid-template-areas: 
+        'navbar'
+        'header'
+        'content'
+        'footer';
+    }
+    
+}

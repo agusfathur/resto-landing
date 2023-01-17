@@ -74,7 +74,7 @@ li a:hover{
 
 .header{
     grid-area: header;
-    background-image: url("restoran1.jpg");
+    background-image: url("restoran.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
